@@ -1,0 +1,47 @@
+experiment_name: "FedHealth_BreastCancer_Clinical_Benchmark"
+
+training:
+  num_rounds: 15
+  num_hospitals: 5
+  client_fraction: 1.0
+  local_epochs: 2
+  batch_size: 16
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+
+algorithm:
+  name: "fedavg"
+  mu: 0.01
+  server_lr: 1.0
+
+privacy:
+  enabled: true
+  clip_norm: 1.0
+  noise_multiplier: 0.5
+  target_delta: 0.00001
+  max_epsilon: 10.0
+  accountant_type: "rdp"
+
+model:
+  architecture: "HealthcareMLP"
+  input_dim: 30
+  hidden_dims: [64, 32, 16]
+  num_classes: 2
+  dropout_rate: 0.2
+  use_batch_norm: true
+
+data:
+  dataset_name: "breast_cancer"
+  partition_type: "dirichlet"
+  dirichlet_alpha: 0.5
+  num_shards_per_client: 2
+  test_split_ratio: 0.2
+  random_seed: 42
+
+server:
+  host: "127.0.0.1"
+  port: 8000
+  grpc_port: 50051
+  ws_endpoint: "/ws"
+  enable_grpc: false

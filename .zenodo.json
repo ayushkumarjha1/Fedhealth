@@ -1,0 +1,24 @@
+{
+  "title": "FedHealth: A Research-Grade Privacy-Preserving Federated Learning Framework for Distributed Clinical Healthcare",
+  "description": "FedHealth is an open-source, production-grade federated learning and clinical AI framework designed for multi-institutional healthcare research. It incorporates non-IID optimization algorithms (FedAvg, FedProx, SCAFFOLD, FedNova, FedAdam), mathematical Differential Privacy with exact Rényi DP accounting, empirical Membership Inference Attack (MIA) privacy validation, physiologically grounded Explainable AI (Cohort-Centroid Integrated Gradients), physics-informed Digital Twin hospital node simulation, and real-time telemetry analytics.",
+  "creators": [
+    {
+      "name": "FedHealth Open-Source Development Team",
+      "affiliation": "FedHealth AI Foundation"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "federated learning",
+    "differential privacy",
+    "healthcare AI",
+    "explainable AI",
+    "clinical decision support",
+    "membership inference attacks",
+    "distributed machine learning"
+  ],
+  "upload_type": "software",
+  "publication_date": "2026-08-02"
+}

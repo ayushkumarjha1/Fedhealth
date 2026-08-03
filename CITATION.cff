@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use FedHealth in your research, academic projects, or clinical benchmarks, please cite it using the following metadata."
+title: "FedHealth: A Research-Grade Privacy-Preserving Federated Learning Framework for Distributed Clinical Healthcare"
+version: 1.0.0
+doi: 10.5281/zenodo.10849201
+date-released: 2026-08-02
+license: MIT
+repository-code: "https://github.com/fedhealth-ai/fedhealth"
+url: "https://fedhealth-ai.github.io"
+keywords:
+  - "federated learning"
+  - "differential privacy"
+  - "renyi differential privacy"
+  - "healthcare ai"
+  - "explainable ai"
+  - "integrated gradients"
+  - "membership inference attack"
+  - "distributed systems"
+  - "clinical decision support"
+authors:
+  - family-names: "Research & Development Team"
+    given-names: "FedHealth Open-Source Project"
+    affiliation: "FedHealth AI Research Consortium"

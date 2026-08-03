@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedpro"
+version = "1.0.0"
+description = "FedHealth: A Research-Grade Privacy-Preserving Federated Learning Framework for Healthcare Analysis"
+authors = [
+    { name="Antigravity", email="ai@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.20.0",
+    "tqdm>=4.65.0",
+    "grpcio>=1.50.0",
+    "grpcio-tools>=1.50.0",
+    "protobuf>=4.21.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "websockets>=11.0.3",
+    "scikit-learn>=1.2.0",
+    "scipy>=1.10.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.0.0",
+    "docker>=7.1.0",
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0"
+]
+
+[project.scripts]
+fedhealth = "fedpro.cli.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

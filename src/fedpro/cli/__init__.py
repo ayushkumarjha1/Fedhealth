@@ -1,0 +1,3 @@
+"""
+FedHealth CLI module.
+"""

@@ -1,0 +1,112 @@
+[
+  {
+    "round": 1,
+    "loss": 0.4601,
+    "accuracy": 94.74,
+    "precision": 95.83,
+    "recall": 95.83,
+    "f1_score": 95.83,
+    "roc_auc": 98.81,
+    "specificity": 92.86,
+    "epsilon": 11.064395461473957,
+    "delta": 1e-05,
+    "confusion_matrix": [
+      [
+        39,
+        3
+      ],
+      [
+        3,
+        69
+      ]
+    ]
+  },
+  {
+    "round": 2,
+    "loss": 0.222,
+    "accuracy": 95.61,
+    "precision": 94.67,
+    "recall": 98.61,
+    "f1_score": 96.6,
+    "roc_auc": 98.94,
+    "specificity": 90.48,
+    "epsilon": 12.976929581750799,
+    "delta": 1e-05,
+    "confusion_matrix": [
+      [
+        38,
+        4
+      ],
+      [
+        1,
+        71
+      ]
+    ]
+  },
+  {
+    "round": 3,
+    "loss": 0.1622,
+    "accuracy": 95.61,
+    "precision": 94.67,
+    "recall": 98.61,
+    "f1_score": 96.6,
+    "roc_auc": 99.11,
+    "specificity": 90.48,
+    "epsilon": 14.569581145222989,
+    "delta": 1e-05,
+    "confusion_matrix": [
+      [
+        38,
+        4
+      ],
+      [
+        1,
+        71
+      ]
+    ]
+  },
+  {
+    "round": 4,
+    "loss": 0.1356,
+    "accuracy": 94.74,
+    "precision": 93.42,
+    "recall": 98.61,
+    "f1_score": 95.95,
+    "roc_auc": 99.27,
+    "specificity": 88.1,
+    "epsilon": 15.588466371973908,
+    "delta": 1e-05,
+    "confusion_matrix": [
+      [
+        37,
+        5
+      ],
+      [
+        1,
+        71
+      ]
+    ]
+  },
+  {
+    "round": 5,
+    "loss": 0.1337,
+    "accuracy": 95.61,
+    "precision": 93.51,
+    "recall": 100.0,
+    "f1_score": 96.64,
+    "roc_auc": 99.27,
+    "specificity": 88.1,
+    "epsilon": 16.607351598724826,
+    "delta": 1e-05,
+    "confusion_matrix": [
+      [
+        37,
+        5
+      ],
+      [
+        0,
+        72
+      ]
+    ]
+  }
+]
