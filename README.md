@@ -1,5 +1,7 @@
 # 🏥 FedHealth: A Research-Grade Privacy-Preserving Federated Learning Framework for Healthcare AI
 
+<div align="center">
+  
 [![Release: v1.0.0](https://img.shields.io/badge/Release-v1.0.0--Gold%20Master-blue.svg)](RELEASE_NOTES_v1.0.0.md)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
@@ -8,6 +10,20 @@
 [![Privacy: RDP](https://img.shields.io/badge/Privacy-R%C3%A9nyi%20DP%20(%CE%B5,%20%CE%B4)-green.svg)](docs/PRIVACY_PROOF.md)
 [![Tests: 25/25 Passing](https://img.shields.io/badge/Tests-25%2F25%20Passing%20(100%25)-emerald.svg)](tests/)
 [![FastAPI + React](https://img.shields.io/badge/UI-FastAPI%20%2B%20React%2019-indigo.svg)](dashboard/)
+
+<br />
+
+### 🚀 1-Click Cloud Deployment (Single Project Experience)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fayushkumarjha1%2FFedhealth&root-directory=dashboard)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ayushkumarjha1/Fedhealth)
+
+<br />
+
+> **[🖼️ Insert Dashboard Screenshot Here]**
+> *(Drag and drop your high-resolution `dashboard_ui.png` into GitHub right here to embed the UI showcase)*
+
+</div>
 
 ---
 
