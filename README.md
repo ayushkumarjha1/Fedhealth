@@ -20,8 +20,7 @@
 
 <br />
 
-> **[🖼️ Insert Dashboard Screenshot Here]**
-> *(Drag and drop your high-resolution `dashboard_ui.png` into GitHub right here to embed the UI showcase)*
+![FedHealth Glassmorphic Dashboard](docs/assets/dashboard_ui.jpg)
 
 </div>
 
@@ -62,26 +61,32 @@ Engineered under strict **SOLID principles**, FedHealth integrates analytical **
 
 ---
 
-## 🔬 Core Highlights & Capabilities
+## ✨ Core Highlights & Feature Explanations
 
-### 1. Algorithm Zoo & Extensible Registry
-- **FedAvg** (*McMahan et al., 2017*): Baseline weighted parameter averaging.
-- **FedProx** (*Li et al., 2020*): Proximal term regularization $\frac{\mu}{2} \|w - w^t\|^2$ tackling non-IID system heterogeneity.
-- **SCAFFOLD** (*Karimireddy et al., 2020*): Control variate formulation ($c_i, c$) eliminating client drift.
-- **FedNova** (*Wang et al., 2020*): Normalized gradient aggregation for variable local epoch updates.
-- **FedOpt / FedAdam / FedYogi** (*Reddi et al., 2021*): Server-side adaptive optimization with second-moment gradient stabilization.
+FedHealth breaks down the barriers to multi-institutional healthcare AI by providing a comprehensive, out-of-the-box solution for federated training. Here is exactly what makes it unique:
 
-### 2. Dual-Layer Differential Privacy Engine
-- **Analytical Rényi DP (RDP) Accounting**: Subsampled Gaussian mechanism with tight numerical conversion to $(\epsilon, \delta)$-DP evaluated across 26 orders $\alpha \in [1.25, 128.0]$.
-- **Empirical Privacy Auditing (MIA Evaluator)**: Built-in Membership Inference Attack benchmark measuring loss-threshold ROC-AUC, empirical privacy advantage, and generalization gap compression.
+### 🧠 1. Comprehensive Algorithm Zoo
+Federated learning across hospitals often fails due to Non-IID data (different patient demographics). FedHealth includes a registry of state-of-the-art algorithms designed to stabilize this divergence:
+*   **FedAvg**: The standard baseline utilizing weighted parameter averaging.
+*   **FedProx**: Injects proximal term regularization ($\frac{\mu}{2} \|w - w^t\|^2$) to prevent hospital nodes from drifting too far from the global model.
+*   **SCAFFOLD**: Introduces control variates ($c_i, c$) to actively correct the direction of local updates, entirely eliminating client drift.
+*   **FedNova**: Normalizes gradient aggregation to account for hospitals taking different numbers of local epoch steps.
+*   **FedAdam / FedYogi**: Server-side adaptive optimization using momentum and second-moment gradient stabilization.
 
-### 3. Clinically Grounded Explainable AI (XAI)
-- **Path-Integrated Gradients**: 50-step Riemann sum path integral satisfying the **Axiom of Completeness** ($\sum \text{IG}_i \approx F(x) - F(x')$ with $|\text{residual}| \le 0.0001$).
-- **Cohort-Centroid Baselines**: Grounded reference state using the empirical mean vector of non-malignant cohorts ($\mu_{\text{benign}}$), eliminating out-of-manifold zero baseline artifacts while maintaining 73.2% directional attribution alignment.
+### 🛡️ 2. Dual-Layer Differential Privacy & Threat Auditing
+Healthcare data cannot just be protected by policy—it requires mathematical guarantees.
+*   **Analytical Rényi DP (RDP) Accountant**: Computes rigorous $(\epsilon, \delta)$-DP bounds using subsampled Gaussian mechanisms, evaluated across 26 discrete RDP orders to find the tightest privacy budget.
+*   **Empirical Membership Inference Auditing**: We don't just calculate theoretical privacy—we simulate an attacker. The built-in MIA Evaluator runs a shadow-model logistic attack to prove empirically that your model resists patient re-identification.
 
-### 4. Digital Twin Hospital Simulation & AI Copilot
-- **Physics-Informed Network Simulation**: Accurately models real-world clinical infrastructure: GPU/CPU hardware profiles, packet latency, network bandwidth constraints, and straggler node phenomena ($T = \text{RTT} + \frac{\text{Bytes}}{\text{BW}} + \text{Jitter}$).
-- **AI Federated Diagnostic Copilot**: Real-time telemetry-grounded advisory subsystem computing client drift cosine similarity matrices $S_{ij}$, gradient Signal-to-Noise Ratio (SNR), and privacy budget depletion rates.
+### 🔬 3. Clinically Grounded Explainable AI (XAI)
+Doctors cannot trust a black-box model. FedHealth includes a built-in diagnostic explainer:
+*   **Path-Integrated Gradients**: A 50-step Riemann sum integral that maps out exactly which patient biomarkers triggered a specific diagnosis. Mathematically verified to satisfy the **Axiom of Completeness**.
+*   **Cohort-Centroid Reference States**: Instead of comparing a patient to a mathematically meaningless "all-zeros" baseline, FedHealth uses the empirical mean vector of non-malignant cohorts ($\mu_{\text{benign}}$), ensuring explanations are clinically grounded.
+
+### 🌐 4. Digital Twin Simulation & AI Copilot
+Simulate the real world before deploying to real hospitals.
+*   **Physics-Informed Network Simulator**: Accurately models real-world clinical infrastructure constraints. Configure NVIDIA A100 vs RTX 4090 performance, packet latency, network bandwidth, and straggler node phenomena.
+*   **AI Federated Copilot**: A real-time telemetry advisory subsystem that computes client drift cosine similarity matrices ($S_{ij}$), monitors gradient Signal-to-Noise Ratio (SNR), and projects privacy budget depletion rates dynamically.
 
 ---
 
